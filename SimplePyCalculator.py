@@ -3,12 +3,12 @@ from tkinter import *
 root = Tk()
 root.title("Simple Py Calculator")
 
-# OUTROS
+# OTHERS
 e = Entry(root, width=35)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
 
-# FUNÇOES
+# FUNCTIONS
 
 def button_click(number):
     current = e.get()
@@ -69,7 +69,7 @@ def button_divide():
     e.delete(0, END)
 
 
-# Botões
+# BUTTONS
 
 botao_1 = Button(root, text='1', padx=40, pady=20, command=lambda: button_click(1))
 botao_2 = Button(root, text='2', padx=40, pady=20, command=lambda: button_click(2))
@@ -88,7 +88,8 @@ button_clear = Button(root, text='Clear', padx=78, pady=20, command=button_clear
 button_subtract = Button(root, text='-', padx=41, pady=20, command=button_subtract)
 button_multiply = Button(root, text='x', padx=40, pady=20, command=button_multiply)
 button_divide = Button(root, text='/', padx=40, pady=20, command=button_divide)
-# Botões na tela
+
+# BUTTONS ON SCREEN
 
 botao_1.grid(row=3, column=0)
 botao_2.grid(row=3, column=1)
